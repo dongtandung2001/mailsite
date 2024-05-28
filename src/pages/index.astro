@@ -1,0 +1,118 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MailIcon from "../icons/MailIcon.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Mailsite">
+  <main class="flex flex-col gap-4 p-4">
+    <div class="flex flex-col items-center py-5">
+      <h1 class="text-2xl sm:text-4xl font-bold text-center">
+        Welcome to Mailsite
+      </h1>
+      <ul class="flex gap-6 items-center font-bold text-2xl mt-6">
+        <li
+          class="dark:bg-zinc-800 bg-white border-t dark:border-zinc-700 h-20 w-20 border-transparent rounded-lg shadow dark:shadow-none flex items-center justify-center"
+        >
+          <MailIcon />
+        </li>
+      </ul>
+      <p class="text-xl mt-6 max-w-prose">
+        Messaging solutions for all types businesses
+      </p>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card
+          title="MailSite Small Businesses"
+          body="Simple, yet powerful messaging server for small-to-medium sized (up to 500 employees) companies that want security and reliability at much lower overhead costs. Forget about costly IT administration and time-consuming trainings!"
+          href="/"
+        />
+        <Card
+          title="MailSite Large Enterprise"
+          body="High-quality messaging server software that provides enterprises with an affordable, secure email, calendar and contacts server with mobile synchronization, calendar server, and advanced security options that can be deployed in a load-balanced cluster of email servers. Learn more!"
+          href="/"
+        />
+        <Card
+          title="MailSite Service Provider"
+          body="Messaging hosting software that provides carriers, hosting providers and service providers with a secure, clustered, scalable, and fault-tolerant SMTP, POP and IMAP email hosting platform. Learn more!"
+          href="/"
+        />
+      </div>
+    </div>
+
+    <div>
+      <p class="text-xl italic text-center">
+        MailSite Fusion Version 10.4 Released! Mailbox and Domain Administration
+        in ExpressPro....
+      </p>
+    </div>
+
+    <h1 class="text-xl font-bold py-2 text-center">
+      ISP-Grade Exchange Alternative Email Server Software with Calendar and
+      Contact Sync.
+    </h1>
+    <p class="text-md mx-5 text-center">
+      MailSite Fusion is a windows email, calendar and contact server with
+      over-the-air push to all types of smartphones, Full native Outlook sync, a
+      sophisticated AJAX web client and a calendar and contact sharing server,
+      which can synchronize and publish to many other clients. MailSite has been
+      voted in the top 3 mail server products by readers of Windows IT Pro
+      Magazine 3 years running.
+    </p>
+
+    <h1 class="text-2xl mx-5 px-5 font-bold px-auto py-2 text-left">
+      Why MailSite Fusion?
+    </h1>
+    <p class="mx-5 px-5 pb-9">
+      Your email services are critical to your organization. So you need to be
+      sure that you select a quality product, from a company with a proven track
+      record in communication software. So, why this mail server? Because
+      Rockliffe understands your concerns, we have been specializing in
+      developing and refining our email server and email security software for
+      business and service providers since 1995. Built from the ground up to be
+      fast, stable and secure, MailSite Fusion is ready to meet the needs and
+      requirements that matter to you most.
+    </p>
+    <div class="grid gap-4 grid-cols-3 mx-5 px-5">
+      <div class="col-span-1 font-bold text-xl">Secure and Reliable</div>
+      <div class="col-span-2">
+        Synchronized Simple Affordable Scalable Flexible Rockliffe has powerful
+        mail security including anti-virus and anti-spam protection, TLS and SSL
+        encryption, Sieve Filters, and more! When you buy from Rockliffe, you
+        are putting the security and reliability of your email services in safe
+        hands.
+      </div>
+      <div class="col-span-1 font-bold text-xl">Synchronized</div>
+      <div class="col-span-2">
+        Native two way sync between Outlook, on your desktop, Webmail and your
+        Mobile Devices through ActiveSync or using our Collaboration Server
+      </div>
+      <div class="col-span-1 font-bold text-xl">Simple</div>
+      <div class="col-span-2">
+        MailSite Fusion is designed to be intuitive software, which is easy to
+        set-up, manage and maintain without the need of an IT administrator or
+        expensive training.
+      </div>
+      <div class="col-span-1 font-bold text-xl">Affordable</div>
+      <div class="col-span-2">
+        MailSite Fusion provides low overhead, low risk rolling upgrades, and
+        around-the-clock technical support at a fraction of Microsoft Exchange’s
+        price, making MailSite a great alternative for those who want an
+        excellent product at an affordable price.
+      </div>
+      <div class="col-span-1 font-bold text-xl">Scalable</div>
+      <div class="col-span-2">
+        For large implementations, MailSite offers unlimited number of servers
+        with no added fees or costs!
+      </div>
+      <div class="col-span-1 font-bold text-xl">Flexible</div>
+      <div class="col-span-2">
+        MailSite gives you the freedom to customize your own package to meet
+        your specific needs! Easily add or remove the options you want to
+        incorporate in your subscription.
+      </div>
+    </div>
+  </main>
+</Layout>

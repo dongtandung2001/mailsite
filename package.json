@@ -1,0 +1,30 @@
+{
+  "name": "rockliffe",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "ssr": "astro build && node server.mjs"
+  },
+  "dependencies": {
+    "@astrojs/node": "^8.2.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.3.0",
+    "astro": "^4.9.1",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "tailwindcss": "^3.4.3",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.14.0"
+  }
+}

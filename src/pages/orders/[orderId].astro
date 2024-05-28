@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import OrderTable from "../../components/OrderTable.vue";
+import axios from "axios";
+const headers = [
+  {
+    key: "ProductName",
+    title: "Product Name",
+  },
+  {
+    key: "Quantity",
+    title: "Quantity",
+  },
+  {
+    key: "UnitPrice",
+    title: "Price",
+  },
+  {
+    key: "Discount",
+    title: "Discount",
+  },
+];
+
+const { orderId } = Astro.params;
+
+let { data } = await axios.get(`http://127.0.0.1:3000/api/orders/${orderId}`);
+data = data.data;
+---
+
+<Layout title="Mailsite">
+  <main class="">
+    <OrderTable
+      tableTitle="Order Detail"
+      tableHeaders={headers}
+      tableData={data}
+      tableFirstColumn="ProductName"
+      client:load
+    />
+  </main>
+</Layout>
